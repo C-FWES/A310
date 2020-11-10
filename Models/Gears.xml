@@ -1,0 +1,371 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+
+ <!-- 
+ Copyright Toryx 2014
+ Distributed under the terms of the GNU General Public Livense v2
+ -->
+
+<PropertyList>
+ 
+
+ <path>Aircraft/A310/Models/Gears.ac</path>
+
+<!-- ................................................... -->
+<!-- Animations -->
+<!-- ................................................... -->
+ <animation>
+  <type>material</type>
+   <object-name>gear_left_leg_upper</object-name>
+   <object-name>gear_right_leg_upper</object-name>
+   <object-name>gearcover_left</object-name>
+   <object-name>gearcover_right</object-name>
+   <object-name>gearcover_front_l</object-name>
+   <object-name>gearcover_front_r</object-name>
+   <property-base>sim/model/livery</property-base>
+   <texture-prop>texture</texture-prop>
+   <texture>Liveries/HF90.png</texture>
+ </animation>
+ 
+<!--Disable when invisible-->
+<animation>
+ <type>select</type>
+ <object-name>gear_front</object-name>  
+ <object-name>gear_front_leg</object-name>  
+ <condition>
+  <greater-than>
+   <property>gear/gear/position-norm</property> 
+   <value>0.0</value>
+  </greater-than>
+ </condition>
+</animation>
+
+<!--Steering-->
+<!--Front-->
+<animation>
+ <type>rotate</type>
+ <object-name>gear_front</object-name> 
+ <property>gear/gear[0]/steering-norm</property>  
+ <factor>-30</factor>
+ <center>
+		<x-m>-13.55979</x-m>
+		<y-m>0</y-m>
+		<z-m>-4.51173</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>0</y>
+  <z>1</z>
+ </axis>
+</animation>
+
+<!--Retract-->
+<!--Gear Front-->
+<animation>
+ <type>rotate</type>
+ <object-name>gear_front</object-name>  
+ <object-name>gear_front_leg</object-name> 
+ <property>gear/gear[0]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>110</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>110</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <center>
+  <x-m>-13.87123</x-m>
+  <y-m>0.0</y-m>
+  <z-m>-1.95457</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!--Cover Front-->
+<animation>
+ <type>rotate</type>
+ <object-name>gearcover_front_l</object-name>  
+ <property>gear/gear[0]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>-90</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>-90</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <axis>
+  <x2-m>-13.45465</x2-m>
+  <y2-m>-0.53295</y2-m>
+  <z2-m>-2.55088</z2-m>
+  <x1-m>-17.1195</x1-m>
+  <y1-m>-0.51197</y1-m>
+  <z1-m>-1.82803</z1-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>gearcover_front_r</object-name>  
+ <property>gear/gear[0]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>90</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>90</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <axis>
+  <x2-m>-13.45465</x2-m>
+  <y2-m>0.53295</y2-m>
+  <z2-m>-2.55088</z2-m>
+  <x1-m>-17.1195</x1-m>
+  <y1-m>0.51197</y1-m>
+  <z1-m>-1.82803</z1-m>
+ </axis>
+</animation>
+
+<!--Gear left-->
+<animation>
+ <type>rotate</type>
+   <object-name>gear_left_leg_upper</object-name>
+ <property>gear/gear[1]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>85</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>85</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <center>
+  <x-m>1.04136</x-m>
+  <y-m>-4.26943</y-m>
+  <z-m>-1.02922</z-m>
+ </center>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!--Cover Left-->
+<animation>
+ <type>rotate</type>
+ <object-name>gearcover_left</object-name>  
+ <property>gear/gear[1]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>100</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>100</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <axis>
+  <x2-m>1.85334</x2-m>
+  <y2-m>-0.19884</y2-m>
+  <z2-m>-2.77008</z2-m>
+  <x1-m>0.23391</x1-m>
+  <y1-m>-0.1988</y1-m>
+  <z1-m>-2.76856</z1-m>
+ </axis>
+</animation>
+
+<!--Gear Right-->
+<animation>
+ <type>rotate</type>
+   <object-name>gear_right_leg_upper</object-name>
+ <property>gear/gear[2]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>-85</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>-85</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <center>
+  <x-m>1.04136</x-m>
+  <y-m>4.26943</y-m>
+  <z-m>-1.02922</z-m>
+ </center>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!--Cover Right-->
+<animation>
+ <type>rotate</type>
+ <object-name>gearcover_right</object-name>  
+ <property>gear/gear[2]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>-100</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>-100</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <axis>
+  <x2-m>1.85334</x2-m>
+  <y2-m>0.19884</y2-m>
+  <z2-m>-2.77008</z2-m>
+  <x1-m>0.23391</x1-m>
+  <y1-m>0.1988</y1-m>
+  <z1-m>-2.76856</z1-m>
+ </axis>
+</animation>
+
+<!--Spin wheels-->
+<!--Front-->
+<animation>
+	<type>spin</type>
+	<object-name>gear_front</object-name>
+	<property>gear/gear[0]/rollspeed-ms</property>
+	<factor>10</factor>
+	<center>
+		<x-m>-13.55979</x-m>
+		<y-m>0</y-m>
+		<z-m>-4.51173</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<model>
+	<name>WheelsL</name>
+	<path>Aircraft/A310/Models/GearsLowerL.xml</path>
+</model>
+
+<model>
+	<name>WheelsR</name>
+	<path>Aircraft/A310/Models/GearsLowerR.xml</path>
+</model>
+
+<!-- Gear tilt -->
+<!-- Left -->
+<animation>
+	<type>rotate</type>
+	<object-name>WheelsL</object-name>
+	<property>sim/multiplay/generic/float[1]</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>20</dep></entry>
+      <entry><ind>0.105</ind><dep>0</dep></entry>
+    </interpolation>
+	<center>
+		<x-m>1.03694</x-m>
+		<y-m>-4.27143</y-m>
+		<z-m>-4.42492</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- Right -->
+<animation>
+	<type>rotate</type>
+	<object-name>WheelsR</object-name>
+	<property>sim/multiplay/generic/float[2]</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>20</dep></entry>
+      <entry><ind>0.105</ind><dep>0</dep></entry>
+    </interpolation>
+	<center>
+		<x-m>1.03694</x-m>
+		<y-m>-4.27143</y-m>
+		<z-m>-4.42492</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+ 
+</PropertyList>

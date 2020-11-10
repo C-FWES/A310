@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+
+
+<PropertyList>
+
+ <path>Aircraft/A310/Models/GearsLowerR.ac</path>
+ 
+<animation>
+ <type>select</type>
+ <object-name>gear_right_1</object-name>  
+ <object-name>gear_right_2</object-name>  
+ <condition>
+  <greater-than>
+   <property>gear/gear/position-norm</property> 
+   <value>0.0</value>
+  </greater-than>
+ </condition>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>gear_right_1</object-name>  
+ <object-name>gear_right_2</object-name>  
+ <object-name>gear_right_leg_lower</object-name>
+ <property>gear/gear[2]/position-norm</property>  
+ <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>-85</dep>
+   </entry>
+   <entry>
+    <ind>0.1</ind>
+    <dep>-85</dep>
+   </entry>
+   <entry>
+    <ind>0.8</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+ </interpolation>
+ <center>
+  <x-m>1.04136</x-m>
+  <y-m>4.26943</y-m>
+  <z-m>-1.02922</z-m>
+ </center>
+ <axis>
+  <x>1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<!-- Spin R -->
+<animation>
+	<type>spin</type>
+	<object-name>gear_right_1</object-name>
+	<property>gear/gear[2]/rollspeed-ms</property>
+	<factor>10</factor>
+	<center>
+		<x-m>0.22694</x-m>
+		<y-m>4.27143</y-m>
+		<z-m>-4.42492</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>spin</type>
+	<object-name>gear_right_2</object-name>
+	<property>gear/gear[2]/rollspeed-ms</property>
+	<factor>10</factor>
+	<center>
+		<x-m>1.82587</x-m>
+		<y-m>4.27143</y-m>
+		<z-m>-4.42492</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+ 
+</PropertyList>

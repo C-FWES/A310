@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>vsi.ac</path>
+
+  <animation>
+    <object-name>Bezel</object-name>
+    <object-name>BezelInt</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>velocities/vertical-speed-fps</property>
+    <interpolation>
+      <entry><ind>-33.333 </ind><dep> -173.0 </dep></entry>
+      <entry><ind>-16.667 </ind><dep>  -84.0 </dep></entry>
+      <entry><ind>     0 </ind><dep>    0.0 </dep></entry>
+      <entry><ind> 16.667 </ind><dep>   84.0 </dep></entry>
+      <entry><ind> 33.333 </ind><dep>  173.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

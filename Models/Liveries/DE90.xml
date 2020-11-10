@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+ 
+ <PropertyList>
+  <sim>
+   <model>
+    <livery>
+     <name type="string">Condor 90s</name>
+     <texture>Liveries/DE90.png</texture>
+    </livery>
+   </model>
+  </sim>
+ </PropertyList>

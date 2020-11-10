@@ -1,0 +1,358 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+
+ <!-- 
+ Copyright Toryx 2014
+ Distributed under the terms of the GNU General Public Livense v2
+ -->
+
+<PropertyList>
+ 
+<path>Aircraft/A310/Models/Lights-Rembrandt.ac</path>
+
+ 
+
+<!--Wing right: green-->
+<animation>
+   <type>light</type>
+   <light-type>point</light-type>
+   <name>PositionLightRightWing</name>
+   <object-name>lightsphere_right_front</object-name>
+   <nopreview/>
+   <position>
+     <x>6.5381</x>
+     <y>22.0</y>
+     <z>0.57996</z>
+   </position>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.00</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>0.0</r>
+     <g>0.5</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.0</r>
+     <g>0.5</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>0.0</c>
+     <l>0.7</l>
+     <q>0.1</q>
+   </attenuation>
+   <near-m>1</near-m>
+   <far-m>50</far-m>
+ </animation>
+
+ <!--Wing left: red-->
+<animation>
+   <type>light</type>
+   <light-type>point</light-type>
+   <name>PositionLightLeftWing</name>
+   <object-name>lightsphere_left_front</object-name>
+   <nopreview/>
+   <position>
+     <x>6.5381</x>
+     <y>-22.0</y>
+     <z>0.57996</z>
+   </position>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.00</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>0.5</r>
+     <g>0.0</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.5</r>
+     <g>0.0</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>0.0</c>
+     <l>0.7</l>
+     <q>0.0</q>
+   </attenuation>
+   <exponent>1.0</exponent>
+   <near-m>1</near-m>
+   <far-m>50</far-m>
+ </animation>
+ 
+ 
+ <!--beacon bottom: red-->
+<animation>
+   <type>light</type>
+   <light-type>point</light-type>
+   <name>PositionLightBottom</name>
+   <object-name>lightsphere_bottom_back</object-name>
+   <nopreview/>
+   <position>
+     <x>6.16771</x>
+     <y>0</y>
+     <z>-3</z>
+   </position>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.00</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>0.5</r>
+     <g>0.1</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.5</r>
+     <g>0.1</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>0.0</c>
+     <l>0.9</l>
+     <q>0.0</q>
+   </attenuation>
+   <near-m>2</near-m>
+   <far-m>50</far-m>
+ </animation>
+ 
+<!--beacon top: red-->
+<animation>
+   <type>light</type>
+   <light-type>point</light-type>
+   <name>PositionLightTop</name>
+   <object-name>lightsphere_top_front</object-name>
+   <nopreview/>
+   <position>
+     <x>-3</x>
+     <y>0</y>
+     <z>3.3</z>
+   </position>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.00</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>0.5.0</r>
+     <g>0.1</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.5</r>
+     <g>0.1</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>0.0</c>
+     <l>0.0</l>
+     <q>0.8</q>
+   </attenuation>
+   <near-m>2</near-m>
+   <far-m>50</far-m>
+ </animation>
+ 
+ <!--Fin: Left-->
+<animation>
+   <type>light</type>
+   <light-type>spot</light-type>
+   <name>FinLightLeft</name>
+   <object-name>lightcone_fin_left</object-name>
+   <nopreview/>
+   <position>
+     <x>20.74</x>
+     <y>-3.59</y>
+     <z>2.1</z>
+   </position>
+   <direction>
+     <x>0.1</x>
+     <y>0.8</y>
+     <z>1</z>
+   </direction>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>1.0</r>
+     <g>1.0</g>
+     <b>1.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.5</r>
+     <g>0.5</g>
+     <b>0.5</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>1.0</c>
+     <l>0.004</l>
+     <q>0.0005</q>
+   </attenuation>
+   <exponent>10.0</exponent>
+   <cutoff>50</cutoff>
+   <near-m>0.1</near-m>
+   <far-m>50</far-m>
+ </animation>
+ 
+<!--Fin: Right-->
+<animation>
+   <type>light</type>
+   <light-type>spot</light-type>
+   <name>FinLightRight</name>
+   <object-name>lightcone_fin_right</object-name>
+   <nopreview/>
+   <position>
+     <x>20.74</x>
+     <y>3.59</y>
+     <z>2.1</z>
+   </position>
+   <direction>
+     <x>0.1</x>
+     <y>-0.8</y>
+     <z>1</z>
+   </direction>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>1.0</r>
+     <g>1.0</g>
+     <b>1.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.5</r>
+     <g>0.5</g>
+     <b>0.5</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>1.0</c>
+     <l>0.004</l>
+     <q>0.0005</q>
+   </attenuation>
+   <exponent>10.0</exponent>
+   <cutoff>50</cutoff>
+   <near-m>0.1</near-m>
+   <far-m>50</far-m>
+ </animation>
+ 
+<!--Front-->
+<animation>
+   <type>light</type>
+   <light-type>spot</light-type>
+   <name>LightFront</name>
+   <object-name>lightcone_front</object-name>
+   <nopreview/>
+   <position>
+     <x>-18</x>
+     <y>0</y>
+     <z>-2.7</z>
+   </position>
+    <direction>
+     <x>-1</x>
+     <y>0</y>
+     <z>-0.1</z>
+   </direction>
+   <ambient>
+     <r>0.0</r>
+     <g>0.0</g>
+     <b>0.0</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>1.0</r>
+     <g>1.0</g>
+     <b>1.0</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.8</r>
+     <g>0.8</g>
+     <b>0.8</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>1.0</c>
+     <l>0.004</l>
+     <q>0.0005</q>
+   </attenuation>
+   <exponent>27.0</exponent>
+   <cutoff>180</cutoff>
+   <near-m>1</near-m>
+   <far-m>180</far-m>
+ </animation>
+
+<animation>
+	<type>select</type>
+	<object-name>lightsphere_top_front</object-name>
+    <object-name>lightsphere_bottom_back</object-name>
+	<condition>
+		<equals>
+			<property>/sim/model/lights/beacon/state</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>lightsphere_right_front</object-name>
+	<object-name>lightsphere_left_front</object-name>
+	<condition>
+		<equals>
+			<property>/controls/lighting/nav-lights</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>lightcone_fin_right</object-name>
+	<object-name>lightcone_fin_left</object-name>
+	<condition>
+		<equals>
+			<property>/controls/lighting/logo-lights</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>lightcone_front</object-name>
+	<condition>
+		<equals>
+			<property>/controls/lighting/landing-lights</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+
+</PropertyList>

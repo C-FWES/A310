@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+
+ <!-- 
+ Copyright Toryx 2014
+ Distributed under the terms of the GNU General Public Livense v2
+ -->
+
+<PropertyList>
+<!-- ................................................... -->
+<!-- Models -->
+<!-- ................................................... -->
+ 
+<model>
+ <name>Fuselage</name>
+ <path>Aircraft/A310/Models/Fuselage.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model>
+
+<model>
+ <name>Interior</name>
+ <path>Aircraft/A310/Models/Interior/interior.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model>
+
+<model>
+ <name>Wings</name>
+ <path>Aircraft/A310/Models/Wings-300.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model> 
+
+<model>
+ <name>Tail</name>
+ <path>Aircraft/A310/Models/Tail.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model>
+ 
+<model>
+ <name>Engines</name>
+ <path>Aircraft/A310/Models/GE-CF6-80C2A8.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model>
+
+<model>
+ <name>Gears</name>
+ <path>Aircraft/A310/Models/Gears.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model>
+
+<model>
+ <name>Lights-Rembrandt</name>
+ <path>Lights-Rembrandt.xml</path>
+ <offsets>
+  <x-m> 0.0</x-m>
+  <y-m> 0.0</y-m>
+  <z-m> -0.35</z-m>
+ </offsets>
+</model>
+	
+<animation>
+	<type>select</type>
+	 <object-name>Lights-Rembrandt</object-name>
+	<condition>
+		<property>/sim/rendering/rembrandt/enabled</property>
+	</condition>
+</animation>
+
+<!-- ................................................... -->
+<!-- Livery select -->
+<!-- ................................................... -->
+<nasal>
+ <load>
+  var livery_update = aircraft.livery_update.new("Aircraft/A310/Models/Liveries");
+ </load>
+ 
+ <unload>
+  livery_update.stop();
+ </unload>
+</nasal>
+
+</PropertyList>

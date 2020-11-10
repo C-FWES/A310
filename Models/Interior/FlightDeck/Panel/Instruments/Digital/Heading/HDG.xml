@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>HDG.ac</path>
+	
+  <animation>
+    <type>material</type>
+    <object-name>BKG</object-name>
+    <object-name>hdgtext</object-name>
+    <object-name>hdgtext.001</object-name>
+    <object-name>hdgtext.002</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    </emission>
+  </animation>
+
+  <!-- Heading -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>hdgtext.001</object-name>
+    <property>/autopilot/settings/heading-bug-deg</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>hdgtext.002</object-name>
+    <property>/autopilot/settings/heading-bug-deg</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>hdgtext.003</object-name>
+    <property>/autopilot/settings/heading-bug-deg</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

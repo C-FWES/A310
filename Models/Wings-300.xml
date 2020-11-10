@@ -1,0 +1,613 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+
+ <!-- 
+ Copyright Toryx 2014
+ Distributed under the terms of the GNU General Public Livense v2
+ -->
+
+<PropertyList>
+
+	<path>Aircraft/A310/Models/Wings-300.ac</path>
+
+	<!-- Speedbrakes and spoilers-->
+	<animation>
+		<type>rotate</type>
+		<object-name>spoiler1_l</object-name>
+		<object-name>spoiler2_l</object-name>
+		<property>controls/flight/spoilers</property>
+		<factor>45</factor>		 
+		<axis>
+			<x2-m>2.4310</x2-m>
+			<y2-m>-6.720</y2-m>
+			<z2-m>-0.3197</z2-m>
+			<x1-m>2.431</x1-m>
+			<y1-m>-3.058</y1-m>
+			<z1-m>-0.7409</z1-m>
+		</axis>
+	</animation>
+ 
+	<!-- stolen from spoilers for speed brakes -->
+	<animation>
+		<type>rotate</type>
+		<object-name>spoiler3_l</object-name>
+		<object-name>spoiler4_l</object-name>
+		<property>controls/flight/speedbrake</property>
+		<factor>-40</factor>		 
+		<axis>
+			<x2-m>2.52323</x2-m>
+			<y2-m>-9.29127</y2-m>
+			<z2-m>-0.0903792</z2-m>
+			<x1-m>4.10091</x1-m>
+			<y1-m>-12.78447</y1-m>
+			<z1-m>0.1104587</z1-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>spoiler5_l</object-name>
+		<object-name>spoiler6_l</object-name>
+		<object-name>spoiler7_l</object-name>
+		<property>controls/flight/spoilers</property>
+		<factor>-45</factor>		 
+		<axis>
+			<x2-m>4.18474</x2-m>
+			<y2-m>-12.75944</y2-m>
+			<z2-m>0.0978145</z2-m>
+			<x1-m>6.33666</x1-m>
+			<y1-m>-17.74405</y1-m>
+			<z1-m>0.3999608</z1-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>spoiler1_r</object-name>
+		<object-name>spoiler2_r</object-name>
+		<property>controls/flight/spoilers</property>
+		<factor>-45</factor>		 
+		<axis>
+			<x2-m>2.4310</x2-m>
+			<y2-m>6.720</y2-m>
+			<z2-m>-0.3197</z2-m>
+			<x1-m>2.431</x1-m>
+			<y1-m>3.058</y1-m>
+			<z1-m>-0.7409</z1-m>
+		</axis>
+	</animation>
+ 
+	<!-- stolen from spoilers for speed brakes -->
+	<animation>
+		<type>rotate</type>
+		<object-name>spoiler3_r</object-name>
+		<object-name>spoiler4_r</object-name>
+		<property>controls/flight/speedbrake</property>
+		<factor>40</factor>		 
+		<axis>
+			<x2-m>2.52323</x2-m>
+			<y2-m>9.29127</y2-m>
+			<z2-m>-0.0903792</z2-m>
+			<x1-m>4.10091</x1-m>
+			<y1-m>12.78447</y1-m>
+			<z1-m>0.1104587</z1-m>
+		</axis>
+	</animation>
+ 
+	<animation>
+		<type>rotate</type>
+		<object-name>spoiler5_r</object-name>
+		<object-name>spoiler6_r</object-name>
+		<object-name>spoiler7_r</object-name>
+		<property>controls/flight/spoilers</property>
+		<factor>45</factor>		 
+		<axis>
+			<x2-m>4.18474</x2-m>
+			<y2-m>12.75944</y2-m>
+			<z2-m>0.0978145</z2-m>
+			<x1-m>6.33666</x1-m>
+			<y1-m>17.74405</y1-m>
+			<z1-m>0.3999608</z1-m>
+		</axis>
+	</animation>
+ 
+ <!-- Ailerons -->
+<animation>
+  <type>rotate</type>
+  <object-name>aileron_a_r</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>20</factor>
+  <offset-deg>0</offset-deg>
+  <axis> 
+   <x1-m>2.6068</x1-m>
+   <y1-m>8.8884</y1-m>
+   <z1-m>-0.276465</z1-m>
+   <x2-m>2.1052</x2-m>
+   <y2-m>6.7113</y2-m>
+   <z2-m>-0.466254</z2-m>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>aileron_a_r</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep> -10.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> -10.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> -10.0</dep></entry>
+    </interpolation>    
+  <offset-deg>0</offset-deg>
+  <axis> 
+   <x1-m>2.6068</x1-m>
+   <y1-m>8.8884</y1-m>
+   <z1-m>-0.276465</z1-m>
+   <x2-m>2.1052</x2-m>
+   <y2-m>6.7113</y2-m>
+   <z2-m>-0.466254</z2-m>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>rotate</type>
+  <object-name>aileron_a_l</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>20</factor>
+  <offset-deg>0</offset-deg>
+  <axis>  
+   <x1-m>2.6068</x1-m>
+   <y1-m>-8.8884</y1-m>
+   <z1-m>-0.276465</z1-m>
+   <x2-m>2.1052</x2-m>
+   <y2-m>-6.7113</y2-m>
+   <z2-m>-0.466254</z2-m>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>aileron_a_l</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep> 10.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 10.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 10.0</dep></entry>
+    </interpolation>      
+  <offset-deg>0</offset-deg>
+  <axis>  
+   <x1-m>2.6068</x1-m>
+   <y1-m>-8.8884</y1-m>
+   <z1-m>-0.276465</z1-m>
+   <x2-m>2.1052</x2-m>
+   <y2-m>-6.7113</y2-m>
+   <z2-m>-0.466254</z2-m>
+  </axis>
+</animation>
+
+  
+<!-- ................................................... -->
+<!-- Flaps + Fairings + Slats-->
+<!-- ................................................... -->
+<!-- Right -->
+<!-- ................................................... -->
+<!-- 1 -->
+<animation>
+ <type>rotate</type>
+ <object-name>flap1_r</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+  <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>2.48248</x1-m>
+  <y1-m>3.05072</y1-m>
+  <z1-m>-1.58661</z1-m>
+  <x2-m>2.48248</x2-m>
+  <y2-m>6.72022</y2-m>
+  <z2-m>-1.0829344</z2-m>
+ </axis>
+</animation>
+ 
+<animation>
+ <type>rotate</type>
+ <object-name>fairing1_r</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>1.46708</x1-m>
+  <y1-m>4.98354</y1-m>
+  <z1-m>-1.29591</z1-m>
+  <x2-m>1.47214</x2-m>
+  <y2-m>5.54617</y2-m>
+  <z2-m>-1.31295</z2-m>
+ </axis>
+</animation>
+ 
+<!-- 2 -->
+ 
+<animation>
+ <type>rotate</type>
+ <object-name>flap2_r</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>2.49062</x1-m>
+  <y1-m>8.91092</y1-m>
+  <z1-m>-0.7213456</z1-m>
+  <x2-m>6.67519</x2-m>
+  <y2-m>18.25006</y2-m>
+  <z2-m>-0.2177784</z2-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>fairing2_r</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>2.73604</x1-m>
+  <y1-m>9.97197</y1-m>
+  <z1-m>-0.4813086</z1-m>
+  <x2-m>2.74262</x2-m>
+  <y2-m>10.49201</y2-m>
+  <z2-m>-0.4813086</z2-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>fairing3_r</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>3.93224</x1-m>
+  <y1-m>13.25186</y1-m>
+  <z1-m>-0.5319689</z1-m>
+  <x2-m>3.93799</x2-m>
+  <y2-m>13.70585</y2-m>
+  <z2-m>-0.5319689</z2-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>fairing4_r</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>5.4267</x1-m>
+  <y1-m>16.56837</y1-m>
+  <z1-m>0.00237577</z1-m>
+  <x2-m>5.43167</x2-m>
+  <y2-m>16.92303</y2-m>
+  <z2-m>0.00237577</z2-m>
+ </axis>
+</animation>
+
+<!-- slats -->
+ <animation>
+  <type>rotate</type>
+  <object-name>slats_left</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep> -1.5</dep></entry>
+     <entry><ind> 0.7946</ind><dep> -1.5</dep></entry>
+     <entry><ind> 0.9933</ind><dep> -1.5</dep></entry>
+     <entry><ind> 1.3333</ind><dep> -3.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>9</x1-m>
+  <y1-m>-21.32</y1-m>
+  <z1-m>-5</z1-m>
+  <x2-m>0</x2-m>
+  <y2-m>-4.01</y2-m>
+  <z2-m>-15</z2-m>
+ </axis>
+ </animation>
+ 
+<!-- ................................................... -->
+<!-- Left -->
+<!-- ................................................... -->
+<!-- 1 -->
+<animation>
+ <type>rotate</type>
+ <object-name>flap1_l</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>2.48248</x1-m>
+  <y1-m>-6.72022</y1-m>
+  <z1-m>-1.0829344</z1-m>
+  <x2-m>2.48248</x2-m>
+  <y2-m>-3.05072</y2-m>
+  <z2-m>-1.58661</z2-m>
+ </axis>
+</animation>
+ 
+<animation>
+ <type>rotate</type>
+ <object-name>fairing1_l</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>1.47214</x1-m>
+  <y1-m>-5.54617</y1-m>
+  <z1-m>-1.31295</z1-m>
+  <x2-m>1.46708</x2-m>
+  <y2-m>-4.98354</y2-m>
+  <z2-m>-1.29591</z2-m>
+ </axis>
+</animation>
+ 
+<!-- 2 -->
+ 
+<animation>
+ <type>rotate</type>
+ <object-name>flap2_l</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x2-m>2.49062</x2-m>
+  <y2-m>-8.91092</y2-m>
+  <z2-m>-0.7213456</z2-m>
+  <x1-m>6.67519</x1-m>
+  <y1-m>-18.25006</y1-m>
+  <z1-m>-0.2177784</z1-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>fairing2_l</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x2-m>2.73604</x2-m>
+  <y2-m>-9.97197</y2-m>
+  <z2-m>-0.4813086</z2-m>
+  <x1-m>2.74262</x1-m>
+  <y1-m>-10.49201</y1-m>
+  <z1-m>-0.4813086</z1-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>fairing3_l</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x2-m>3.93224</x2-m>
+  <y2-m>-13.25186</y2-m>
+  <z2-m>-0.5319689</z2-m>
+  <x1-m>3.93799</x1-m>
+  <y1-m>-13.70585</y1-m>
+  <z1-m>-0.5319689</z1-m>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>fairing4_l</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep>  0.0</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 15.0</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 20.0</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 30.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x2-m>5.4267</x2-m>
+  <y2-m>-16.56837</y2-m>
+  <z2-m>0.00237577</z2-m>
+  <x1-m>5.43167</x1-m>
+  <y1-m>-16.92303</y1-m>
+  <z1-m>0.00237577</z1-m>
+ </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>spoiler5_r</object-name>
+  <object-name>spoiler6_r</object-name>
+  <object-name>spoiler7_r</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+ <factor>15</factor>		 
+   <condition>
+   <greater-than>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+  
+  <property>controls/flight/spoilers</property>
+ <axis>
+  <x2-m>4.18474</x2-m>
+  <y2-m>12.75944</y2-m>
+  <z2-m>0.0978145</z2-m>
+  <x1-m>6.33666</x1-m>
+  <y1-m>17.74405</y1-m>
+  <z1-m>0.3999608</z1-m>
+ </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>spoiler3_r</object-name>
+  <object-name>spoiler4_r</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+ <factor>12</factor>		 
+   <condition>
+   <greater-than>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ <axis>
+  <x2-m>2.52323</x2-m>
+  <y2-m>9.29127</y2-m>
+  <z2-m>-0.0903792</z2-m>
+  <x1-m>4.10091</x1-m>
+  <y1-m>12.78447</y1-m>
+  <z1-m>0.1104587</z1-m>
+ </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>spoiler5_l</object-name>
+  <object-name>spoiler6_l</object-name>
+  <object-name>spoiler7_l</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+ <factor>15</factor>		 
+   <condition>
+   <less-than>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <value>0</value>
+   </less-than>
+  </condition>  
+ <axis>
+  <x2-m>4.18474</x2-m>
+  <y2-m>-12.75944</y2-m>
+  <z2-m>0.0978145</z2-m>
+  <x1-m>6.33666</x1-m>
+  <y1-m>-17.74405</y1-m>
+  <z1-m>0.3999608</z1-m>
+ </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>spoiler3_l</object-name>
+  <object-name>spoiler4_l</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+ <factor>12</factor>		 
+   <condition>
+   <less-than>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <value>0</value>
+   </less-than>
+  </condition>
+ <axis>
+  <x2-m>2.52323</x2-m>
+  <y2-m>-9.29127</y2-m>
+  <z2-m>-0.0903792</z2-m>
+  <x1-m>4.10091</x1-m>
+  <y1-m>-12.78447</y1-m>
+  <z1-m>0.1104587</z1-m>
+ </axis>
+</animation>
+
+<!-- slats -->
+ <animation>
+  <type>rotate</type>
+  <object-name>slats_right</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+   <interpolation>
+     <entry><ind> 0.0</ind><dep> 0.0</dep></entry>
+     <entry><ind> 0.3866</ind><dep> 1.5</dep></entry>
+     <entry><ind> 0.7946</ind><dep> 1.5</dep></entry>
+     <entry><ind> 0.9933</ind><dep> 1.5</dep></entry>
+     <entry><ind> 1.3333</ind><dep> 3.0</dep></entry>
+  </interpolation>
+ <axis>
+  <x1-m>9</x1-m>
+  <y1-m>21.32</y1-m>
+  <z1-m>-5</z1-m>
+  <x2-m>0</x2-m>
+  <y2-m>4.01</y2-m>
+  <z2-m>-15</z2-m>
+ </axis>
+ </animation>
+
+<!-- ................................................... -->
+<!-- Spoiler -->
+<!-- ................................................... -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>spoiler5_r</object-name>
+  <object-name>spoiler6_r</object-name>
+  <object-name>spoiler7_r</object-name>
+  <property>surface-positions/spoiler-pos-norm</property>
+ <factor>50</factor>		 
+ <axis>
+  <x2-m>4.18474</x2-m>
+  <y2-m>12.75944</y2-m>
+  <z2-m>0.0978145</z2-m>
+  <x1-m>6.33666</x1-m>
+  <y1-m>17.74405</y1-m>
+  <z1-m>0.3999608</z1-m>
+ </axis>
+</animation>
+ 
+</PropertyList>

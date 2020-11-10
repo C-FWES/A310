@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+:copyright: 2015 Peter Brendt, Jabberwocky
+:copyright: 2014 Toryx
+:copyright: 2014 Pierre Duval
+Distributed under the terms of the GNU General Public Livense v2
+
+Just some quick fixes by Jabberwocky to make it easier flyable, in the hope, it will be merged at some point with Toryx' main development line.
+-->
+
+<PropertyList>
+
+	<sim>
+		<description>Airbus A310-300</description>
+		<aircraft-version>0.13</aircraft-version>
+		<status>alpha</status>
+
+		<rating>
+			<FDM type="int">1</FDM>
+			<systems type="int">0</systems>
+			<cockpit type="int">3</cockpit>
+			<model type="int">4</model>
+		</rating>
+
+		<author>Models: Toryx; Flightdeck: Pierre Duval Joshua Davidson (it0uchpods); Sounds and AP: Ja Sam Niko; FDM fixes: Peter Brendt - Jabberwocky</author>
+		<flight-model>jsb</flight-model>
+		<aero>A310-324</aero>
+		<variant>Polaris</variant>
+		<engine>GE-CF6-80C2A2</engine>
+    
+		<startup>
+			<splash-texture>Splashs/cc150-splash.png</splash-texture>
+		</startup>
+
+		<flaps>
+			<setting>0.00</setting>
+			<setting>0.29</setting>
+			<setting>0.596</setting>
+			<setting>0.745</setting>
+			<setting>1</setting>
+		</flaps>
+
+		<model>
+			<path>Aircraft/A310/Models/CC-150-Polaris.xml</path>
+
+			<!-- prep to install a pushback -->
+			<!-- JPack: push forces for Voodoomaster Pushback -->
+			<pushback>
+				<kp type="double">800</kp>
+				<ki type="double">0</ki>
+				<kd type="double">0</kd>
+				<position-norm type="double">0</position-norm>
+				<enabled type="bool">false</enabled>
+			</pushback>
+
+			<livery>
+				<file type="string"/>
+			</livery>
+		</model>
+
+		<!-- preset for the changed AP window -->
+		<gui>
+			<dialogs>
+				<autopilot>
+					<kts-select type="bool">true</kts-select>
+					<mach-select tpye="bool">false</mach-select>
+				</autopilot>
+			</dialogs>
+		</gui>
+
+		<sound>
+			<path>Aircraft/A310/Sounds/A310-sound.xml</path>
+			<switch type = "bool">0</switch>
+			<Evolume>1</Evolume>
+		</sound>
+    
+		<view>
+			<internal archive="y">true</internal>
+			<config>
+				<x-offset-m archive="y">-0.53</x-offset-m>
+				<y-offset-m archive="y">0.67</y-offset-m>
+				<z-offset-m archive="y">-17.4228</z-offset-m>
+				<pitch-offset-deg archive="y">-7.5</pitch-offset-deg>
+				<default-field-of-view-deg type="double">88.0</default-field-of-view-deg>
+			</config>
+		</view>
+
+		<chase-distance-m type="double">-80</chase-distance-m>
+       
+		<menubar>
+			<default>
+
+				<menu n="100">
+					<label>CC-150 Polaris</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.open()</script>
+						</binding>
+					</item>
+                                     <item>
+    <label>System Failures</label>
+    <binding>
+      <command>nasal</command>
+      <script>
+       var failures = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/A310/Systems/failures-dlg.xml");
+       failures.open();
+     </script>
+   </binding>
+     </item>
+		</menu>
+	</default>
+  </menubar>
+
+		  <instrument-options>
+	<canvas-popup-enable type="bool">true</canvas-popup-enable>
+  </instrument-options>
+  
+  <instrumentation>
+
+    <mk-viii>
+       <name>mk-viii</name>
+       <number>0</number>
+    </mk-viii>
+
+  </instrumentation>
+  
+        <multiplay>
+            <generic>
+                <float n="0" alias="/gear/gear[0]/compression-ft"/>
+                <float n="1" alias="/gear/gear[1]/compression-ft"/>
+                <float n="2" alias="/gear/gear[2]/compression-ft"/>
+                <float n="5" alias="/surface-positions/speedbrake-norm"/>
+                <float n="6" alias="/surface-positions/reverser-norm"/>
+                <string  alias="/sim/multiplay/callsign"/>
+            </generic>
+        </multiplay>
+  
+        <flight-recorder include="Systems/flight-recorder.xml"/>
+		
+		<!-- Systems -->
+		<systems>
+			<autopilot>
+			<name>IT-AUTOFLIGHT</name>
+				<path>Aircraft/A310/Systems/it-autoflight.xml</path>
+			</autopilot>
+			<autopilot>
+			<name>IT-AUTOTHRUST</name>
+				<path>Aircraft/A310/Systems/it-autothrust.xml</path>
+			</autopilot>
+		</systems>
+	</sim>
+  
+	<consumables>
+		<fuel>
+			<tank n="0"><name>Outer Left</name></tank>
+			<tank n="1"><name>Inner Left</name></tank>
+			<tank n="2"><name>Center</name></tank>
+			<tank n="3"><name>Inner Right</name></tank>
+			<tank n="4"><name>Outer Right</name></tank>
+			<tank n="5"><name>Trim Tank</name></tank>
+			<tank n="6"><name>Opt. Ctr. Fwd.</name></tank>
+			<tank n="7"><name>Opt. Ctr. Rear</name></tank>
+		</fuel>
+	</consumables>
+
+	<!-- Payload section: Whatever weights -->
+	<payload>
+
+		<weight n="0">
+			<name>Crew</name>
+			<!-- pilot + copilot -->
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" />
+			<min-lb type="double">  200</min-lb>
+			<max-lb type="double">  400</max-lb>
+		</weight>
+
+		<weight n="1">
+			<!-- payload -->
+			<name>Passengers and Baggage</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double">73414</max-lb>
+		</weight>
+
+	</payload>
+
+	<input>
+		<keyboard>
+
+			<key n="2">
+				<name>Ctrl-B</name>
+				<desc>Toggle speedbrakes.</desc>
+				<binding>
+					<command>property-cycle</command>
+					<property>controls/flight/speedbrake</property>
+					<value>0</value>
+					<value>0.33</value>
+					<value>0.66</value>
+					<value>1</value>
+				</binding>
+			</key>
+
+			<key n="127">
+				<name>Delete</name>
+				<desc>Toggle Reversers</desc>
+				<binding>
+					<command>nasal</command>
+					<script>reversethrust.togglereverser();</script>
+				</binding>
+			</key>
+		</keyboard>
+	</input>
+
+	<engines>
+		<engine n="0">
+			<running>true</running>
+			<rpm>1000</rpm>
+			<reverser-position type="double">0.000000</reverser-position>
+		</engine>
+
+		<engine n="1">
+			<running>true</running>
+			<rpm>1000</rpm>
+			<reverser-position type="double">0.000000</reverser-position>
+		</engine>
+	</engines>	
+
+	<it-autoflight>
+	<config>
+		<roll>
+			<umin>-0.50</umin>
+			<umax>0.50</umax>
+			<kp>0.08</kp>
+			<kp-vloc>0.09</kp-vloc>
+			<ti>10.0</ti>
+			<td>0.00001</td>
+			<kp-cws>0.09</kp-cws>
+		</roll>
+		<pitch>
+			<umin>-0.35</umin>
+			<umax>0.35</umax>
+			<kp>-0.09</kp>
+			<ti>10.0</ti>
+			<td>0.0001</td>
+			<kp-cws>-0.07</kp-cws>
+		</pitch>
+		<cmd>
+			<roll-scale>6</roll-scale>
+			<vorloc>-5.0</vorloc>
+			<alt>0.03</alt>
+			<vs>0.07</vs>
+			<flch>-0.30</flch>
+			<gs>0.10</gs>
+		</cmd>
+		<autoland>
+			<kp-roll>0.10</kp-roll>
+			<kp-pitch>0.02</kp-pitch>
+			<kp-rudder>-0.3</kp-rudder>
+		</autoland>
+	</config>
+	<settings>
+		<flare-altitude>30</flare-altitude>
+		<land-enable>0</land-enable>
+		<land-flap>0.745</land-flap>
+		<retard-ft>50</retard-ft>
+		<retard-enable>0</retard-enable>
+		<toga-pitch>15</toga-pitch>
+	</settings>
+	</it-autoflight>
+	
+	<instrumentation>
+	<mk-viii>                           <!-- http://wiki.flightgear.org/index.php/GPWS -->
+
+     <serviceable>true</serviceable>   <!-- EGPWS_ENABLE -->
+
+     <configuration-module>
+       <category-1>   255 </category-1>  <!-- AIRCRAFT_MODE_TYPE_SELECT -->
+       <category-3>   2 </category-3>  <!-- POSITION_INPUT_SELECT -->
+       <category-4>  13 </category-4>  <!-- ALTITUDE_CALLOUTS -->
+       <category-5>   0 </category-5>  <!-- AUDIO_MENU_SELECT -->
+       <category-6>   1 </category-6>  <!-- TERRAIN_DISPLAY_SELECT -->
+       <category-7> 124 </category-7>  <!-- OPTIONS_SELECT_GROUP_1 -->
+       <category-8>   3 </category-8>  <!-- RADIO_ALTITUDE_INPUT_SELECT -->
+       <category-9>   3 </category-9>  <!-- NAVIGATION_INPUT_SELECT -->
+       <category-10>  6 </category-10> <!-- ATTITUDE_INPUT_SELECT -->
+       <category-13>  7 </category-13> <!-- INPUT_OUTPUT_DISCRETE_TYPE_SELECT -->
+       <category-14>  0 </category-14> <!-- AUDIO_OUTPUT_LEVEL -->
+     </configuration-module>
+
+     <inputs>                          <!-- Module I/O -->
+       <arinc429>
+         <decision-height-ncd> false </decision-height-ncd>
+         <decision-height> 250 </decision-height>
+       </arinc429>
+     </inputs>
+
+     <speaker>                         <!-- Speaker Configuration -->
+       <max-dist> 2 </max-dist>        <!-- Max. distance where speaker is heard -->
+       <reference-dist> 1 </reference-dist> <!-- Distance to pilot -->
+       <volume> 2 </volume>          <!-- Volume at reference distance -->
+     </speaker>
+
+     <voice>
+         <file-prefix type="string">Aircraft/A310/Sounds/mk-viii/</file-prefix>
+                                         <!-- sound file path and prefix -->
+     </voice>
+
+   </mk-viii>
+	</instrumentation>
+
+	<nasal>
+		<A310> 
+	        <file>Aircraft/A310/Nasal/polaris-liveries.nas</file>
+		    <file>Aircraft/A310/Nasal/electrical.nas</file>
+		    <file>Aircraft/A310/Nasal/systems.nas</file>
+		    <file>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ND/ND.nas</file>
+		</A310>
+		<reversethrust>
+			<file>Aircraft/A310/Nasal/reverse-thrust.nas</file>
+		</reversethrust>
+		<itaf>
+			<file>Aircraft/A310/Nasal/it-autoflight.nas</file>
+		</itaf>
+		<damage>
+			<file>Aircraft/A310/Nasal/damage.nas</file>
+		</damage>
+	</nasal> 
+
+</PropertyList>

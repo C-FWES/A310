@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel1</object-name>
+    
+ 
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Gear Lever -->
+  <animation>
+	  <type>rotate</type>
+	  <object-name>GearLever</object-name>
+	  <property>controls/gear/gear-down</property>
+	  <factor>50</factor>
+	  <offset-deg>-50</offset-deg>   
+	  <center>
+	   <x-m>-0.0421</x-m>
+	   <y-m>0</y-m>
+	   <z-m>-0.0865</z-m>
+	  </center>
+	   <axis>  
+	   <y>1</y>
+	  </axis>
+	</animation>
+ 
+  <!-- Flaps lever -->
+  <animation>
+	  <type>rotate</type>
+	  <object-name>panelC.027</object-name>
+	  <property>controls/flight/flaps</property>
+	  <factor>60</factor>
+	  <offset-deg>-37</offset-deg>   
+	  <axis>  
+	   <x1-m>0.004</x1-m>
+	   <y1-m>-0.1265</y1-m>
+	   <z1-m>0.1000</z1-m>
+	   <x2-m>0.004</x2-m>
+	   <y2-m>-0.1145</y2-m>
+	   <z2-m>0.1000</z2-m>
+	  </axis>
+	</animation>
+
+  <!-- Park break lever -->
+  <animation>
+	  <type>rotate</type>
+	  <object-name>PbrakeLever</object-name>
+	  <property>controls/gear/brake-parking</property>
+	  <factor>45</factor>
+	  <offset-deg>0</offset-deg>   
+	  <axis>  
+	   <x1-m>0.1372</x1-m>
+	   <y1-m>-0.1445</y1-m>
+	   <z1-m>0.1498</z1-m>
+	   <x2-m>0.1704</x2-m>
+	   <y2-m>-0.1445</y2-m>
+	   <z2-m>0.2453</z2-m>
+	  </axis>
+	</animation>
+	<animation>
+	  <type>translate</type>
+	  <object-name>PbrakeLever</object-name>
+	  <property>controls/gear/brake-parking</property>
+	  <factor>0.03</factor>
+	  <offset-m>-0.03</offset-m>
+	  <axis>  
+	   <x1-m>0.1372</x1-m>
+	   <y1-m>-0.1445</y1-m>
+	   <z1-m>0.1498</z1-m>
+	   <x2-m>0.1704</x2-m>
+	   <y2-m>-0.1445</y2-m>
+	   <z2-m>0.2453</z2-m>
+	  </axis>
+	</animation>
+
+  <!-- Speed brakes lever -->
+  <animation>
+	  <type>rotate</type>
+	  <object-name>SbrakeLever</object-name>
+	  <property>controls/flight/speedbrake</property>
+	  <factor>60</factor>
+	  <offset-deg>-45</offset-deg>   
+	  <axis>  
+	   <x1-m>0.004</x1-m>
+	   <y1-m>-0.1265</y1-m>
+	   <z1-m>0.1799</z1-m>
+	   <x2-m>0.004</x2-m>
+	   <y2-m>-0.1145</y2-m>
+	   <z2-m>0.1799</z2-m>
+	  </axis>
+	</animation>
+
+
+
+  
+  <!-- Overhead -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Overhead/overhead.xml</path>
+    <offsets>
+      <x-m>  0.724 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.629 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pedestal -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Pedestal/pedestal.xml</path>
+    <offsets>
+      <x-m>  0.415 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.488 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Eadi -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/eadi/eadi.xml</path>
+    <offsets>
+      <x-m> -0.029 </x-m>
+      <y-m> -0.571 </y-m>
+      <z-m> -0.036 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/eadi/eadi.xml</path>
+    <offsets>
+      <x-m>0.9607</x-m>
+			<y-m>-0.2597</y-m>
+			<z-m>1.2439</z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!--Standby Altitude Indicator From 767-->
+    <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Stby-AI/stby-ai.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.231 </y-m>
+      <z-m>0.0205</z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- nd -->
+  <model>
+	<name>Captain ND</name>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ND/ND_L.xml</path>
+    <offsets>
+      <x-m> -0.013 </x-m>
+      <y-m> -0.571 </y-m>
+      <z-m> -0.206 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+	<name>Copilot ND</name>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ND/ND_R.xml</path>
+    <offsets>
+      <x-m> -0.013</x-m>
+      <y-m>  0.571 </y-m>
+      <z-m> -0.206 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- asi -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ASI/asi.xml</path>
+    <offsets>
+      <x-m> -0.022</x-m>
+      <y-m> -0.709 </y-m>
+      <z-m> -0.025 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ASI/face.xml</path>
+    <offsets>
+      <x-m> -0.022</x-m>
+      <y-m> -0.709 </y-m>
+      <z-m> -0.025 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ASI/asi.xml</path>
+    <offsets>
+      <x-m> -0.026</x-m>
+      <y-m>  0.431 </y-m>
+      <z-m> -0.025 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ASI/face.xml</path>
+    <offsets>
+      <x-m> -0.026</x-m>
+      <y-m>  0.431 </y-m>
+      <z-m> -0.025 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- hsi -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m> -0.705 </y-m>
+      <z-m> -0.129 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m>  0.437 </y-m>
+      <z-m> -0.129 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Altimeter -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Altimeter/altimeter.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.437 </y-m>
+      <z-m> -0.022 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Altimeter/altimeter.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.705 </y-m>
+      <z-m> -0.022 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.437 </y-m>
+      <z-m> -0.110 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.705 </y-m>
+      <z-m> -0.110 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- ADF -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ADF/adf.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.437 </y-m>
+      <z-m> -0.198 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/ADF/adf.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.705 </y-m>
+      <z-m> -0.198 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Chronometer -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Chronometer/chronometer.xml</path>
+    <offsets>
+      <x-m> -0.013 </x-m>
+      <y-m> -0.365 </y-m>
+      <z-m> -0.114 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Chronometer/chronometer.xml</path>
+    <offsets>
+      <x-m> -0.013 </x-m>
+      <y-m>  0.777 </y-m>
+      <z-m> -0.114 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- rev -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/REV/REV1.xml</path>
+    <offsets>
+      <x-m> -0.03 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> 0.050 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/REV/REV2.xml</path>
+    <offsets>
+      <x-m> -0.03 </x-m>
+      <y-m> 0.032 </y-m>
+      <z-m> 0.050 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- epr -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/epr/epr-L.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> -0.000 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/epr/epr-R.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.032 </y-m>
+      <z-m> -0.000 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- n1 -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/n1/n1-L.xml</path>
+    <offsets>
+      <x-m> -0.018 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> -0.058 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/n1/n1-R.xml</path>
+    <offsets>
+      <x-m> -0.018 </x-m>
+      <y-m>  0.032 </y-m>
+      <z-m> -0.058 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- egt -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/egt/egt-L.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> -0.116 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/egt/egt-R.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.032 </y-m>
+      <z-m> -0.116 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- FF -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/FF/FF-L.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> -0.175 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/FF/FF-R.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.032 </y-m>
+      <z-m> -0.175 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Oil press -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/OilPress/L-OilPress.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> -0.234 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/OilPress/R-OilPress.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.032 </y-m>
+      <z-m> -0.234 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- DIGITAL -->
+
+  
+  <!-- DGempty1 -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Digital/DGempty1/DGempty1.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.248 </y-m>
+      <z-m>  0.215 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Digital/DGempty1/DGempty1.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.248 </y-m>
+      <z-m>  0.215 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- empty for the moment--> 
+  <!-- empty1 -->
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/empty/empty1/empty1.xml</path>
+    <offsets>
+      <x-m> -0.019 </x-m>
+      <y-m> -0.143 </y-m>
+      <z-m> -0.061 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/empty/empty2/empty2.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.128 </y-m>
+      <z-m>0.0177</z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/empty/empty3/empty3.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.173 </y-m>
+      <z-m> -0.218 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/empty/empty3/empty3.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.173 </y-m>
+      <z-m> -0.218 </z-m>
+      <pitch-deg> -6 </pitch-deg>
+    </offsets>
+  </model>
+  
+    <animation>
+        <type>pick</type>
+	<object-name>ATHR.off</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>false</repeatable>
+			<binding>
+			<command>property-assign</command>
+			<property>controls/switches/at</property>
+			<value>1</value>
+			</binding>
+			<binding>
+			<command>nasal</command>
+			<script>
+			if (getprop("/autopilot/locks/at-mode") == 0) {
+				setprop("/autopilot/locks/speed", "speed-with-throttle");
+			} else if (getprop("/autopilot/locks/at-mode") == 1) {
+				setprop("/autopilot/locks/speed", "mach-with-throttle");
+			}
+			</script>
+			</binding>
+        </action>
+    </animation>
+	
+    <animation>
+        <type>pick</type>
+	<object-name>ATHR.on</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>false</repeatable>
+			<binding>
+			<command>property-assign</command>
+			<property>controls/switches/at</property>
+			<value>0</value>
+			</binding>
+			<binding>
+			<command>property-assign</command>
+			<property>autopilot/locks/speed</property>
+			<value></value>
+			</binding>
+        </action>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>ATHR.off</object-name>
+        <condition>
+            <equals>
+                <property>controls/switches/at</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>ATHR.on</object-name>
+        <condition>
+            <equals>
+                <property>controls/switches/at</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+  
+    <animation>
+        <type>pick</type>
+	<object-name>ALT</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>true</repeatable>
+            <binding>
+				<command>property-assign</command>
+				<property>controls/switches/apvertset</property>
+				<value>0</value>
+			</binding>
+        </action>
+    </animation>
+  
+	<animation>
+        <type>pick</type>
+	<object-name>HDG</object-name>
+        <action>
+            <button>0</button>
+			<repeatable>true</repeatable>
+            <binding>
+				<command>property-assign</command>
+				<property>controls/switches/aplatset</property>
+				<value>0</value>
+			</binding>
+        </action>
+    </animation>
+	
+	<animation>
+        <type>pick</type>
+	<object-name>NAV</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>true</repeatable>
+            <binding>
+				<command>property-assign</command>
+				<property>controls/switches/aplatset</property>
+				<value>1</value>
+			</binding>
+        </action>
+    </animation>
+	
+	<animation>
+        <type>pick</type>
+	<object-name>LOC</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>true</repeatable>
+            <binding>
+				<command>property-assign</command>
+				<property>/controls/switches/aplatset</property>
+				<value>2</value>
+			</binding>
+        </action>
+    </animation>
+	
+	<animation>
+        <type>pick</type>
+	<object-name>APP</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>true</repeatable>
+            <binding>
+				<command>property-assign</command>
+				<property>controls/switches/apvertset</property>
+				<value>2</value>
+			</binding>
+        </action>
+    </animation>
+	
+<animation>
+  <type>pick</type>
+  <object-name>SPD.knb</object-name>
+  <action>
+    <button>3</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/autopilot/settings/target-speed-kt</property>
+      <step>1</step>
+      <min>0</min>
+      <max>340</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>SPD.knb</object-name>
+  <action>
+    <button>4</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/autopilot/settings/target-speed-kt</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>340</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>ALT.knb</object-name>
+  <action>
+    <button>3</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/autopilot/settings/target-altitude-ft</property>
+      <step>100</step>
+      <min>0</min>
+      <max>45000</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>ALT.knb</object-name>
+  <action>
+    <button>4</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/autopilot/settings/target-altitude-ft</property>
+      <step>-100</step>
+      <min>0</min>
+      <max>45000</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>HDG.knb</object-name>
+  <action>
+    <button>3</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/autopilot/settings/heading-bug-deg</property>
+      <step>1</step>
+      <min>1</min>
+      <max>361</max>
+      <wrap>true</wrap>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>HDG.knb</object-name>
+  <action>
+    <button>4</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/autopilot/settings/heading-bug-deg</property>
+      <step>-1</step>
+      <min>1</min>
+      <max>361</max>
+      <wrap>true</wrap>
+    </binding>
+  </action>
+</animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>VS.knb</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>/autopilot/settings/vertical-speed-fpm</property>
+                <step>100</step>
+                <min>-8000</min>
+                <max>6000</max>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>VS.knb</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>/autopilot/settings/vertical-speed-fpm</property>
+            <step>-100</step>
+            <min>-8000</min>
+            <max>6000</max>
+            </binding>
+        </action>
+    </animation>
+	
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Digital/SPD/DigitalSPD.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.145 </y-m>
+      <z-m>  0.215 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Digital/Alt/DigitalAlt.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.062 </y-m>
+      <z-m>  0.215 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Digital/Heading/HDG.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.008 </y-m>
+      <z-m>  0.215 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/A310/Models/Interior/FlightDeck/Panel/Instruments/Digital/VS/VS.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.076 </y-m>
+      <z-m>  0.215 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+    </offsets>
+  </model>
+  
+    <animation>
+        <type>pick</type>
+	<object-name>AP.off</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>false</repeatable>
+			<binding>
+			<command>property-assign</command>
+			<property>/controls/switches/ap_mastersw</property>
+			<value>1</value>
+			</binding>
+        </action>
+    </animation>
+	
+    <animation>
+        <type>pick</type>
+	<object-name>AP.on</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>false</repeatable>
+			<binding>
+			<command>property-assign</command>
+			<property>/controls/switches/ap_mastersw</property>
+			<value>0</value>
+			</binding>
+        </action>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>AP.off</object-name>
+        <condition>
+            <equals>
+                <property>/controls/switches/ap_master</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>AP.on</object-name>
+        <condition>
+            <equals>
+                <property>/controls/switches/ap_master</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+  
+</PropertyList>
+

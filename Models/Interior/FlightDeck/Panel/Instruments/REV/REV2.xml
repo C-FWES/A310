@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>REV.ac</path>
+
+<animation>
+  <type>select</type>
+  <object-name>FaceEngRevL</object-name>
+  <condition>
+    <not>
+      <property>controls/engines/engine[1]/reverser</property>
+    </not>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>FaceEngRevLOn</object-name>
+  <condition>
+    <property>controls/engines/engine[1]/reverser</property>
+  </condition>
+</animation>
+
+</PropertyList>
+

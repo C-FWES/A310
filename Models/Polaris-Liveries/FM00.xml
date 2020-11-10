@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+ 
+ <PropertyList>
+  <sim>
+   <model>
+    <livery>
+     <name type="string">Fed Ex 00s</name>
+     <texture>Liveries/FM00.png</texture>
+    </livery>
+   </model>
+  </sim>
+ </PropertyList>

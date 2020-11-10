@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<PropertyList>
+ 
+
+ <path>Tail.ac</path>
+
+ 
+ <animation>
+  <type>material</type>
+   <object-name>vstab</object-name>
+   <object-name>rudder</object-name>
+   <property-base>sim/model/livery</property-base>
+   <texture-prop>texture</texture-prop>
+   <texture>Liveries/HF90.png</texture>
+ </animation>
+ 
+<!-- ................................................... -->
+<!-- Tail -->
+<!-- ................................................... -->
+<!-- Elevator/htrim -->
+ 
+<animation>
+  <type>rotate</type>
+  <object-name>helevator_l</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>20</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>   
+   <x1-m>25.7531</x1-m>
+   <y1-m>-8.1292</y1-m>
+   <z1-m>2.363</z1-m>
+   <x2-m>22.3546</x2-m>
+   <y2-m>-0.871977</y2-m>
+   <z2-m>1.6736</z2-m>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>helevator_r</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>20</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>   
+   <x1-m>22.3546</x1-m>
+   <y1-m>0.871977</y1-m>
+   <z1-m>1.6736</z1-m>
+   <x2-m>25.7531</x2-m>
+   <y2-m>8.1292</y2-m>
+   <z2-m>2.363</z2-m>
+  </axis>
+</animation>
+ 
+<!-- Rudder -->
+ 
+<animation>
+  <type>rotate</type>
+  <object-name>rudder</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>20</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>  
+   <x1-m>20.762</x1-m>
+   <y1-m>0.00</y1-m>
+   <z1-m>3.0702</z1-m>
+   <x2-m>25.38167</x2-m>
+   <y2-m>0.00</y2-m>
+   <z2-m>11.15894</z2-m>
+  </axis>
+</animation>
+ 
+
+
+</PropertyList>
